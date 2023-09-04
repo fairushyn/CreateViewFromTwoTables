@@ -1,0 +1,58 @@
+###
+
+# curl --location 'http://localhost:5000/entities/addA' 
+
+# curl -X 'POST' 
+#  'http://localhost:5000/Entities/addA' 
+#  -H 'accept: text/plain' 
+#  -H 'Content-Type: application/json' 
+#  -d '{
+#  "id": 0,
+#  "name": "SampleNameForA"
+#}'
+POST http://localhost:5000/Entities/addA
+accept: text/plain
+Content-Type: application/json
+
+{
+  "id": 0,
+  "name": "SampleNameForA"
+}
+
+###
+
+# curl --location 'http://localhost:5000/entities/addB'
+
+# curl -X 'POST' 
+#  'http://localhost:5000/Entities/addB' 
+#  -H 'accept: text/plain' 
+#  -H 'Content-Type: application/json' 
+#  -d '{
+#  "id": 0,
+#  "description": "SampleDescriptionForB"
+#}'
+POST http://localhost:5000/Entities/addB
+accept: text/plain
+Content-Type: application/json
+
+{
+  "id": 0,
+  "description": "SampleDescriptionForB"
+}
+
+###
+
+# curl --location 'http://localhost:5000/EntitiesView'
+
+# curl -X 'GET' 
+#  'http://localhost:5000/EntitiesView' 
+#  -H 'accept: */*'
+GET http://localhost:5000/EntitiesView
+accept: */*
+
+###
+
+
+
+
+
